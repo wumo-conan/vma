@@ -1,4 +1,4 @@
-name: Upload Python Package
+name: Export Conan Recipe
 
 on:
   release:
@@ -8,7 +8,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  export:
     if: contains(github.event.head_commit.message, 'release plz')
     runs-on: ubuntu-latest
 
